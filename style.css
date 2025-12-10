@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+body {
+  margin: 0;
+  background-image: url("images/back.png");
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row {
+  height: 25%;
+  width: 100%;
+  justify-content: end;
+  display: flex;
+}
+.row2 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+.box {
+  height: 100%;
+  width: 45%;
+}
+.box2 {
+  height: 100%;
+  width: 20%;
+  opacity: 0.5;
+}
+.hover {
+}
+/* enhance the UX */
+.hover:hover {
+  cursor: pointer;
+}
+.hover:active {
+  transform: scale(0.95);
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 245, 245, 0.65); /* semi-transparent whitesmoke */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.modal2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+/* don't cover the entire screen */
+.modal-body {
+  display: block;
+  width: 90%;
+  height: 90%;
+  background-color: rgba(109, 250, 109, 0.8); /* semi-transparent green */
+  margin: 0;
+  cursor: url("images/crosshair.png") 16 16, crosshair; /* custom HD crosshair */
+  text-align: center;
+}
+.modal-body2 {
+  display: block;
+  width: 100%;
+  height: 90%;
+}
+.text-row {
+  height: 10%;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.close {
+  color: #aaaaaa;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.yeller {
+  background-color: yellow;
+  border: 2px solid yellow;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+  color: yellow;
+
+  transition: 0.25s ease;
+}
+
+button {
+  background: var(--accent);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Orbitron;
+  font-size: x-large;
+}
+h1 {
+  font-family: Orbitron;
+  font-size: x-large;
+  color: var(--accent);
+}
+h2 {
+  font-size: 60px;
+  color: var(--panel);
+  -webkit-text-stroke: 2px black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --bg: #b7ffb7;
+  --panel: #e6ffe6;
+  --accent: #2f855a;
+  --muted: #4a5568;
+  --danger: #e53e3e;
+}
+.asteroid {
+  pointer-events: auto;
+}
+.plus-sized {
+  transform: scale(3);
+}
+.cafeteria-map,
+.reactor-map,
+.oxygen-map,
+.admin-map,
+.electrical-map {
+  transition: transform 0.2s ease;
+}
+
+.oxygen-map:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-body-map {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("images/weapons.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 20;
+}
+
+.close-map {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  z-index: 21;
+}
+
+.close-map:hover {
+  color: #000;
+}
+
+.oxygen {
+  position: absolute;
+  pointer-events: auto;
+  width: 120px;
+  height: 120px;
+}
+
+.box67 {
+  height: 50%;
+  width: 8%;
+}
+.box67 img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+.red {
+  background-color: red;
+  opacity: 0.5;
+}

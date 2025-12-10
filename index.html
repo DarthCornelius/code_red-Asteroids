@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Asteroids Task — Among Us Style</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="row">
+      <div class="box67 hover" onclick="showMap()">
+        <img src="images/mapped.png" />
+      </div>
+    </div>
+    <div class="row2">
+      <div class="box"></div>
+      <div class="box2 hover yeller" id="taskStart" onclick="showModal()"></div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-body">
+        <div class="text-row">
+          <h1 id="scoreText">Asteroids Destroyed: 0/20</h1>
+        </div>
+        <div class="modal-body2" id="modalBody"></div>
+
+        <button id="startBtn" onclick="startTask()">Start Task</button>
+      </div>
+    </div>
+    <div class="modal" id="myOtherModal">
+      <img class="plus-sized" src="gifs/dead.gif" />
+    </div>
+    <div class="modal2" id="myOtherOtherModal">
+      <h2>Task Complete</h2>
+    </div>
+    <div class="modal2 red" id="myOtherOtherOtherModal"></div>
+    <div class="modal2" id="myOtherOtherOtherOtherModal">
+      <h2>Oxygen is Depleting</h2>
+    </div>
+    <div class="modal-map" id="myMap">
+      <!-- Close button -->
+      <span class="close-map" onclick="toggleMap()">
+        <img
+          src="images/button.png"
+          alt="Close"
+          style="width: 40px; height: 40px"
+        />
+      </span>
+      <div class="modal-body-map">
+        <!-- Each box navigates to a different page -->
+        <div
+          class="oxygen"
+          style="top: 400px; left: 1260px"
+          onclick="goToOxygen()"
+          id="oxy"
+        ></div>
+      </div>
+    </div>
+    <audio src="sounds/blasterfinal.mp3" id="blast"></audio>
+    <audio src="sounds/explodefinal.mp3" id="splode"></audio>
+    <audio src="sounds/alarm.mp3" id="alarm"></audio>
+    <audio src="sounds/Among-Open.mp3" id="open3r"></audio>
+    <audio src="sounds/among-close.mp3" id="clos3r"></audio>
+    <audio src="sounds/among-us-ambient.mp3" id="ambient" loop autoplay></audio>
+    <audio src="sounds/taskcomplete2.mp3" id="compl3te"></audio>
+    <audio src="sounds/among-typing.mp3" id="typer"></audio>
+    <audio src="sounds/killedd.mp3" id="feet"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
